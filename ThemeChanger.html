@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        --value: white;
+        background-color: var(--value);
+        transition: background-color  0.5s;
+        --value2: black;
+        color: var(--value2);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <button onClick="{handleClick()}">Toggle</button>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro sit, ea
+      distinctio soluta assumenda suscipit saepe esse voluptates, adipisci
+      facilis eum quae praesentium? Dolore qui maxime odio fuga eos
+      perspiciatis!
+    </p>
+    <script>
+      let body = document.querySelector("body");
+
+      let isToggle = false;
+
+      function handleClick() {
+        isToggle = !isToggle;
+        body.style.setProperty("--value", isToggle ? "black" : "white");
+        body.style.setProperty("--value2", isToggle ? "white" : "black");
+      }
+    </script>
+  </body>
+</html>

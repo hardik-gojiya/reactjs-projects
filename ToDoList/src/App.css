@@ -1,0 +1,59 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+li {
+  padding: 5px;
+  list-style: none;
+  margin:5px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(112, 112, 112);
+  background-color: rgb(63, 63, 63);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+.btn-1 {
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(119, 119, 119);
+  align-self: flex-end;
+  margin: 5px;
+  height: 30px;
+  width: auto;
+}
+
+ul {
+  display: grid;
+}
+.input-item {
+  padding: 5px;
+  width: 30vw;
+  height: 22px;
+  margin: 10px;
+}
+.bla-bla {
+  width: 75vw;
+  display: flex;
+  align-self: center;
+  overflow: hidden;
+}
+.inline-flex {
+  display: flex;
+}
+.bllll {
+  display: flex;
+  position: relative;
+}
+.ch-bllll {
+  width: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bla-bla {
+    width: 30vw;
+  }
+}
